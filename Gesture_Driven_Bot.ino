@@ -32,9 +32,9 @@ int trig = 7; // attach pin 7 to Trig
 int echo = 8; //attach pin 8 to Echo
 
 // Left and Right defined as if you were looking at car from back
-const int motorRight_Enable = 11;
-const int motorRight_InputOne = 12;
-const int motorRight_InputTwo = 13;
+const int motorRight_Enable = 6;
+const int motorRight_InputOne = 4;
+const int motorRight_InputTwo = 5;
 
 void setup() {
 // initialize serial communication:
