@@ -1,3 +1,7 @@
+'''
+Code referenced from: https://electrocredible.com/raspberry-pi-pico-w-bluetooth-ble-micropython/
+'''
+
 # Helpers for generating BLE advertising payloads.
 
 from micropython import const
