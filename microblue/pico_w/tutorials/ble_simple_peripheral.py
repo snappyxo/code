@@ -1,3 +1,7 @@
+'''
+Code referenced from: https://electrocredible.com/raspberry-pi-pico-w-bluetooth-ble-micropython/
+'''
+
 # This example demonstrates a UART periperhal.
 
 import bluetooth
