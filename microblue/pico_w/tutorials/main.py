@@ -53,7 +53,7 @@ def decode_data(data):
     data = str(data, 'ASCII').replace(' ','_')[1:len(data)-1].split('_')
     
     id = data[0]
-    value = data[1]
+    value = data[1].lower().replace(' ','')
     
     # Check if the data was sent from the D-Pad or the Joystick
     if value.find(',') != -1:
@@ -72,7 +72,6 @@ def decode_data(data):
     
     # Put loop logic here
     if id == 't0':
-        value = str(value).lower().replace(' ','')
         print(value)
         if value == 'onboard':
             example = 1
