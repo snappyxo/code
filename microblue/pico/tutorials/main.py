@@ -52,7 +52,7 @@ def decode_data(command):
         # mutate data to get separate id and value strings
         data = data[1:len(data)-1].split('_')
         id = data[0]
-        value = data[1]
+        value = data[1].lower().replace(' ','')
         
         # check for joystick or d-pad command
         if value.find(',') != -1:
@@ -69,7 +69,6 @@ def decode_data(command):
         
         # put loop logic here
         if id == 't0':
-            value = str(value).lower().replace(' ','')
             print(value)
             if value == 'onboard':
                 example = 1
